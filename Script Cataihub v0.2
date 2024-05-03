@@ -57,6 +57,18 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "Player Esp",
+	Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
