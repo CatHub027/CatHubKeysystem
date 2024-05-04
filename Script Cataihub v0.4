@@ -2,7 +2,7 @@ local player = game.Players.LocalPlayer
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Cataihub GUI V0.3", HidePremium = false, SaveConfig = true, ConfigFolder = "Catai Hub"})
+local Window = OrionLib:MakeWindow({Name = "Cataihub GUI V0.4", HidePremium = false, SaveConfig = true, ConfigFolder = "Catai Hub"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -22,6 +22,18 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Tab = Window:MakeTab({
+	Name = "Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
@@ -31,6 +43,14 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 local Section = Tab:AddSection({
 	Name = "LocalPlayer"
 })
+
+local Section = Tab:AddSection({
+	Name = "Script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 
 --[[
 Name = <string> - The name of the section.
@@ -63,6 +83,18 @@ Tab:AddButton({
       loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
   	end    
 })
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 --[[
 Name = <string> - The name of the button.
