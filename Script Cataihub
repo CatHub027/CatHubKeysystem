@@ -43,7 +43,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddTextbox({
 	Name = "Enter Key",
-	Default = "",
+	Default = "https://link-target.net/1169685/cataihub-key-system-1",
 	TextDisappear = true,
 	Callback = function(Value)
 		_G.KeyInput = Value
