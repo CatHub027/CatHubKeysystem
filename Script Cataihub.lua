@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Name = "Logged In!",
 	Content = "you are Logged in this "..Player.Name.."",
 	Image = "rbxassetid://4483345998",
-	Time = 3
+	Time = 1.2
 })
 
 _G.Key = "A0285KBANQLAUA"
@@ -22,7 +22,7 @@ OrionLib:MakeNotification({
 	Name = "Successfully Key!",
 	Content = "You are Successfully Enter key!",
 	Image = "rbxassetid://4483345998",
-	Time = 1
+	Time = 0.5
 })
 
 function IncorrectKeyNotification()
@@ -30,7 +30,7 @@ OrionLib:MakeNotification({
 	Name = "Invailed Key!",
 	Content = "You are Invailed Enter key!",
 	Image = "rbxassetid://4483345998",
-	Time = 1
+	Time = 0.5
 })
 
 local Tab = Window:MakeTab({
