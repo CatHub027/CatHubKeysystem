@@ -13,7 +13,7 @@ _G.Key = "A0285KBANQLAUA"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cataihub/Cataihub-script-gui/main/Cataihub%20script.lua')))()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/Cataihub/Cataihub-script-gui.lua/main/Cataihub-script.lua?token=GHSAT0AAAAAACSDUOV6E6VCVQVSYKAN4KY6ZR6TWIQ"))()
 
 end
 
