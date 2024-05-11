@@ -1,5 +1,4 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Cataihub | Key system", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 OrionLib:MakeNotification({
