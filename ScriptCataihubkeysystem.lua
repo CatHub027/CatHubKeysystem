@@ -4,7 +4,7 @@ def check_key():
     entered_key = entry.get()
     if entered_key in keys:
         messagebox.showinfo("Access Granted", "Welcome to the UI!")
-        # Add code here to open the UI
+        
     else:
         messagebox.showerror("Access Denied", "Incorrect key!")
 
