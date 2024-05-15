@@ -30,7 +30,7 @@ StarterGui:SetCore("SendNotification", {
     Text = "please Get key link"
     Duration = 10
     Button1 = "Copy"
-    Button1 = "Discord Join"
+    Button2 = "Discord Join"
     Callback = script.ButtonClicked
 })
 
