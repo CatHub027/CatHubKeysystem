@@ -21,3 +21,19 @@ button = tk.Button(root, text="Submit", command=check_key)
 button.pack()
 
 root.mainloop()
+
+local StarterGui = game:GetService("StarterGui")
+
+wait(4)
+StarterGui:SetCore("SendNotification", {
+    Title = "Get key!"
+    Text = "please Get key link"
+    Duration = 4
+    Button1 = "Copy"
+    Callback = script.ButtonClicked
+})
+
+script.ButtonClicked.Invoke = function(buttonText)
+if buttonText == "Copyboard to get check key" then
+setclipboard("https://link-target.net/1169685/cataihub-key-system-1")
+  end
