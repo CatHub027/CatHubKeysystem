@@ -24,16 +24,23 @@ root.mainloop()
 
 local StarterGui = game:GetService("StarterGui")
 
-wait(4)
+wait(10)
 StarterGui:SetCore("SendNotification", {
     Title = "Get key!"
     Text = "please Get key link"
-    Duration = 4
+    Duration = 10
     Button1 = "Copy"
+    Button1 = "Discord Join"
     Callback = script.ButtonClicked
 })
 
 script.ButtonClicked.Invoke = function(buttonText)
 if buttonText == "Copyboard to get check key" then
 setclipboard("https://link-target.net/1169685/cataihub-key-system-1")
+
+        elseif buttonText == "Discord Join" then
+setclipboard("https://discord.gg/gR4EcQzC")
+            
+  end            
+return         
   end
